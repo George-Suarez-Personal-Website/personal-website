@@ -9,3 +9,34 @@
 img {
     width: 48px;
 }
+
+.contact {
+    text-align: center;
+    padding: 5%;
+}
+
+section > p {
+    justify-content: center;
+    padding: 1%;
+}
+
+#name, #email, #message {
+    padding: 16px;
+    margin-top: 10px;
+    width: 500px;
+}
+
+button {
+    margin-top: 16px;
+    background: white;
+    border: 2px solid black;
+    font-size: 16px;
+    width: 100px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
