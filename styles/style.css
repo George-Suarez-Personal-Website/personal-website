@@ -10,6 +10,12 @@ img {
     width: 48px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .contact {
     text-align: center;
     padding: 5%;
@@ -26,17 +32,17 @@ section > p {
     width: 500px;
 }
 
-button {
+.submit-btn {
     margin-top: 16px;
-    background: white;
-    border: 2px solid black;
+    background-color: white;
+    border: 1px solid black;
     font-size: 16px;
     width: 100px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
-.button:hover {
+.submit-btn:hover {
     background-color: black;
     color: white;
 }
