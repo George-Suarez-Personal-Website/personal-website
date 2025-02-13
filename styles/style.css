@@ -28,6 +28,9 @@ img {
   z-index: 0;
   background-color: black;
   color: white;
+  border: 1em;
+  border-style: double;
+  border-color: white;
 }
 
 .contact {
