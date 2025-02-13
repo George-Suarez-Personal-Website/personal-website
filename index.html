@@ -18,7 +18,13 @@
     </head>
     <body>
         <!-- Content Goes Here -->
-        <section class="container">
+        <section class="home">
+            <canvas
+                class="background"
+                width="1361"
+                height="965"
+                style="display: block"
+            ></canvas>
             <section class="heading">
                 <section class="heading_line-1">
                     Hello, I'm
@@ -49,13 +55,25 @@
                 </li>
             </ul>
         </nav>
+        <div class="main-bg">
+            <div class="canvas">
+                <canvas
+                    class="canvas-2"
+                    width="1940"
+                    height="965"
+                    style="display: block"
+                ></canvas>
+            </div>
+        </div>
         <!-- About Me -->
         <section id="about" class="about">
             <h2 class="about-heading section-heading">About</h2>
             <div class="about-content">
                 <div class="profile">
                     <div class="profile-picture">
-                        <p>Image Here</p>
+                        <p>
+                            <img src="images/user-profile-pic.png" alt="">
+                        </p>
                     </div>
                     <p class="profile-blurb">
                         Lorem Ipsum is simply dummy text of the printing and
@@ -71,11 +89,55 @@
                         Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                 </div>
-				<div class="skills">
-					<div class="skills-row"></div>
-					<div class="skills-row"></div>
-					<div class="skills-row"></div>
-				</div>
+                <div class="skills">
+                    <div class="skills-row">
+                        <div class="skills-item skills-item-html">
+                            <img src="images/html.png" alt="" />
+                            <div class="skills-item-name">HTML</div>
+                        </div>
+                        <div class="skills-item skills-item-cpp">
+                            <img src="images/cpp.png" alt="" />
+                            <div class="skills-item-name">C++</div>
+                        </div>
+                        <div class="skills-item skills-item-js">
+                            <img src="images/javascript.png" alt="" />
+                            <div class="skills-item-name">JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skills-item skills-item-html">
+                            <img src="images/java.png" alt="" />
+                            <div class="skills-item-name">Java</div>
+                        </div>
+                        <div class="skills-item skills-item-html">
+                            <img src="images/nodejs.png" alt="" />
+                            <div class="skills-item-name">NodeJS</div>
+                        </div>
+
+                        <div class="skills-item skills-item-cpp">
+                            <img src="images/python.png" alt="" />
+                            <div class="skills-item-name">Python</div>
+                        </div>
+                        <div class="skills-item skills-item-js">
+                            <img src="images/git.png" alt="" />
+                            <div class="skills-item-name">Git</div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skills-item skills-item-html">
+                            <img src="images/reactjs.png" alt="" />
+                            <div class="skills-item-name">React</div>
+                        </div>
+                        <div class="skills-item skills-item-cpp">
+                            <img src="images/csharp.png" alt="" />
+                            <div class="skills-item-name">C#</div>
+                        </div>
+                        <div class="skills-item skills-item-js">
+                            <img src="images/css.png" alt="" />
+                            <div class="skills-item-name">CSS</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -115,12 +177,18 @@
             <ul>
                 <li class="d-inline-block p-2">
                     <a href="https://github.com/georgesuarez">
-                        <img src="images/github-mark.svg" alt="GitHub Logo" />
+                        <img
+                            src="images/github-mark-white.svg"
+                            alt="GitHub Logo"
+                        />
                     </a>
                 </li>
                 <li class="d-inline-block p-2">
                     <a href="https://www.linkedin.com/in/george-suarez/">
-                        <img src="images/linkedin.svg" alt="Linkedin Logo" />
+                        <img
+                            src="images/linkedin-white.png"
+                            alt="Linkedin Logo"
+                        />
                     </a>
                 </li>
             </ul>
@@ -136,7 +204,6 @@
             crossorigin="anonymous"
         ></script>
         <!-- Particles.js script -->
-        <canvas class="background"></canvas>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     </body>
 </html>
