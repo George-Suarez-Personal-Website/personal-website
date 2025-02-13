@@ -1,67 +1,198 @@
-.navbar-brand {
-  font-size: 2rem;
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-.navbar-nav {
-  font-size: 2rem;
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #1a1a1a;
+    color: #fafafa;
+    font-family: "Space Mono", serif;
 }
 
-img {
-  width: 48px;
+.navigation-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6rem;
+  border-bottom: 1px solid #1a1a1a;
+  background-color: rgba(40, 40, 40, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  z-index: 999999999999999;
+}
+
+.navigation {
+  display: flex;
+  margin-right: 10rem;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.navigation-item--active {
+  color: #ff4d5a;
+}
+
+li {
+  list-style: none;
+}
+
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  left: 50px;
+}
+
+.profile-blurb {
+  font-size: 1rem;
+  width: 500px;
+  line-height: 1.8;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.section-heading {
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-top: 9rem;
+  margin-bottom: 13rem;
+  z-index: 9999;
 }
 
 .background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
 }
 
 .container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+}
+
+.heading {
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fafafa;
+    font-weight: 100;
+    z-index: 999;
+}
+
+.heading_line-1 {
+    font-size: 3rem;
+    background-color: rgba(26, 26, 26, 0.25);
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.heading_line-1 span {
+    color: #ff4d5a;
+    font-weight: 400;
+}
+
+.heading_line-2 {
+    font-size: 3em;
+    background-color: rgba(26, 26, 26, 0.25);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.heading-cta {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  margin-top: 24px;
-  z-index: 0;
-  background-color: black;
-  color: white;
-  border: 1em;
-  border-style: double;
-  border-color: white;
+  margin-top: 2.4rem;
+  padding: 0.8rem 3rem;
+  height: 4.8rem;
+  background-color: rgba(26, 26, 26, 0.25);
+  border: 2px solid #fafafa;
+  color: #FF4D5A;
+  font-size: 2rem;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .contact {
-  text-align: center;
-  padding: 5%;
+    text-align: center;
+    color: #fafafa;
+    background-color: rgba(26, 26, 26, 0.25);
+    padding: 5%;
+    font-weight: 700;
+    font-style: normal;
 }
 
 section > p {
-  text-justify: center;
-  padding: 1%;
+    text-justify: center;
+    padding: 1%;
 }
 
 #name,
 #email,
 #message {
-  padding: 16px;
-  margin-top: 10px;
-  width: 500px;
+    padding: 16px;
+    margin-top: 10px;
+    width: 500px;
 }
 
 .submit-btn {
-  margin-top: 16px;
-  background-color: white;
-  border: 1px solid black;
-  font-size: 16px;
-  width: 100px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+    margin-top: 16px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 16px;
+    width: 100px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .submit-btn:hover {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }

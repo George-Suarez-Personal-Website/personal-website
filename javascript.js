@@ -2,10 +2,22 @@ console.log("Hello World!");
 
 // Loading particle effects
 
-window.onload = function() {
+window.onload = function () {
     Particles.init({
-        selector: '.background',
-        maxParticles: 150,
-        connectParticles: true
+        selector: ".background",
+        color: ['#FAFAFA','#FF0011'],
+        maxParticles: 250,
+        connectParticles: true,
+        responsive: [
+            {
+                breakpoint: 800,
+                options: {
+                    color: '#FA00DD',
+                    maxParticles: 150,
+                    connectParticles: false
+                }
+            }
+        ]
     });
 };
+
