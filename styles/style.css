@@ -552,6 +552,13 @@ li {
     }
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact {
     text-align: center;
     color: #fafafa;
