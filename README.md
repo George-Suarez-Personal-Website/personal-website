@@ -1,3 +1,2 @@
-# personal-website
-This repo is an on-going project for Fullstack Academy where we are tasked to create a personal website to show
-potential employers.
+# Personal Website
+My own personal website that is still in work in progress.
